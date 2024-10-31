@@ -1,0 +1,953 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*barra de navegacion*/
+
+nav {
+    background-color: #e0e0e0;
+    position: fixed;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 3% 2%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: 'Gulfs Display';
+    font-size: 1.7vw;
+    font-weight: 100;
+}
+
+nav ul li img {
+    height: 25px;
+    padding-right: 10%;
+}
+/* inicio*/
+.home-1 {
+    background-image: url("../img/propiedades.webp");
+    background-repeat: no-repeat;
+    height: 53vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+    width: 50vw;
+    background-color: white;
+}
+.cuadro h1{
+    margin: 3vw 0;
+    font-size: 2.5vw;
+}
+
+.botones-home input {
+    border-radius: 5px;
+    padding: 1vw;
+    height: 5vw;
+    font-size: 1.5vw;
+}
+
+.btn-blanco{
+    background-color: white;
+}
+.btn-negro{
+    background-color: black;
+    color: white;
+}
+
+
+/* seccion de quienes somos*/
+.quienes{
+    height: 47vw;
+    background-color: #292929;
+}
+
+.caja-quienes{
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+}
+.texto{
+    color: white;
+    width: 40vw;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.texto h1{
+    margin: 3vw 0;
+    font-size: 2.5vw;
+}
+.texto p{
+    font-size: 2vw;
+}
+
+.foto{
+    width: 40vw;
+}
+
+.foto img{
+    width: 100%;
+    height: 47vw;
+    padding: 2vw;
+
+}
+
+/* seccion de anuncios*/
+.anuncios{
+    height: 52vw;
+    background-color: #e0e0e0;
+}
+
+.caja-anuncios{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    padding: 1vw 0vw;
+    color: #424242;
+    font-size: 1.3vw;
+}
+
+.fotos-anuncios{
+    width: 100%;
+    display: flex;
+}
+
+
+.poste{
+    width: 100%;
+    display: flex;
+}
+
+.poste-foto {
+  width: 90%;
+  margin: 0 auto;
+  color: #424242;
+  padding: 2vw 1vw;
+}
+
+.poste-foto img{
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+}
+
+.poste-foto p{
+    margin: 3vw 0vw;
+    font-size: 1.5vw;
+}
+
+
+/* seccion de ventas recientes */
+.ventas{
+    height: 52vw;
+    background-color: #e0e0e0;
+
+}
+/* seccion de clientes*/
+.clientes{
+    height: 52vw;
+    background-color: #e0e0e0;
+}
+
+/* seccion de Contacto*/
+.contacto{
+    height: 47vw;
+    background-color: #292929;
+}
+
+.caja-contacto{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    width: 100%;
+}
+
+
+
+
+
+
+.conteiner{
+    position: relative;
+    top: -6vw;
+}
+
+/* tamaño de pantalla inferiores a  768px*/
+
+/* home */
+@media (max-width: 768px){
+    .home {
+        position: relative;
+        background-color: #fff460;
+        height: 119vw;
+        width: 100%;
+    }
+    nav {
+        background-color: #ff0055;
+        display: none;
+    }
+    .home-1 {
+        border-bottom: 2px solid black;
+        background-color: #feb4cd;
+        height: 68vw;
+    }
+    .letras-home {
+        width: 85%;
+        position: relative;
+        text-align: center;
+        left: 10%;
+        padding-top: 2%;
+        z-index: 1;
+    }
+    .letras-home h1 {
+        font-size: 9vw;
+        color: #015dfd;
+        font-family: 'Gulfs Display';
+        line-height: 1.1;
+        font-weight: 200;
+    }
+    .mu-lateral {
+       display: none;
+    }
+    .estrellas {
+        position: absolute;
+        width: 15%;
+        right: 78%;
+        top: 13vw;
+    }
+    .estrellas2 {
+        position: absolute;
+        width: 10%;
+        right: 86%;
+        top: 49vw;
+
+    }
+    .estrellas3 {
+        position: absolute;
+        width: 9%;
+        right: 0%;
+        top: 56vw;
+    }
+    .casados-home {
+        width: 80%;
+        position: absolute;
+        left: 11%;
+        top: 14vw;
+    }    
+    .casados-home1 {
+       display: none;
+    }  
+    .aster-home {
+        display: none;
+    }
+    .sello-home {
+        position: absolute;
+        width: 20%;
+        right: 69%;
+        top: 99vw;
+        -webkit-animation: rotate-center 20s ease-in-out infinite both;
+        animation: rotate-center 20s ease-in-out infinite both;
+    }
+
+
+    /* seccion de nosotros*/
+.nosotros{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6% auto 37% 6%;
+    height: 167vw;
+    background-color: #fff460;
+}
+.columna-nos{
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+}
+.columna-nos img{
+    width: 10%;
+    margin-right:4%;
+}
+ .nosotros h3{
+    font-family: sans-serif;
+    font-size: 80%;
+    display: none;
+ }
+.columna-nos2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%; 
+}
+.columna-nos2 img{
+    width: 10%;
+    margin-left:4%;
+}
+.foto-nos{
+    grid-column: span 2;
+    width: 80%;
+    margin: 0 auto; 
+}
+.caja-rota-nos{
+        position: relative;
+        width: 50%;
+        height: 55vw;
+        left: 10%;
+        transform: rotate(-5deg);
+        background-color: #feb4cd;
+        border: 2px solid black;
+        top: 0vw;
+        margin: 4vw 9vw;
+}
+.caja-rota-nos1{
+    position: relative;
+    width: 50%;
+    height: 55vw;
+    left: 11%;
+    transform: rotate(-5deg);
+    background-color: #feb4cd;
+    border: 2px solid black;
+    top: -60vw;
+    margin: 4vw 9vw;
+   
+}
+.caja-rota-nos2{
+    position: relative;
+        width: 50%;
+        height: 55vw;
+        left: 24%;
+        transform: rotate(-5deg);
+        background-color: #ffffff;
+        border: 2px solid black;
+        padding: 1vw;
+        top: -120vw;
+}
+.caja-rota-nos2 img{
+    height: 52vw;
+
+}
+.cajon{
+    margin: 0 auto;
+    width: 80%;
+    grid-row: 2;
+    grid-column: span 2;
+}
+.letrero{
+    text-align: center;
+        font-family: 'Gulfs Display';
+        font-weight: 200;
+        font-size: 20vw;
+        color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #015dfd;
+        line-height: 0.9;
+}
+.letrero2{
+    font-weight: 1000;
+    font-size: 3vw;
+}
+.letrero3{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    position: relative;
+    
+}
+.letra1{
+    font-family: 'Gulfs Display';
+    font-weight: 100;
+    width: 50%;
+}
+.anillo{
+    width: 25%;
+}
+.anillo img{
+    width: 100%;
+}
+.estrella{
+    width: 22%;
+}
+.estrella img{
+    width: 100%;
+}
+/* seccion de galeria */
+.galeria{
+    height: 66vw;
+    background-color: white;
+    
+}
+.galeria-naranja{
+    position: relative;
+    border-top: 2px solid black;
+    top: 46.2vw;
+    background-color: #ff6541;
+    height: 20vw;
+    width: 100%;
+
+}
+.fotos{
+    
+    position: relative;
+    width: 100%;
+    top: -15vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+}
+
+.cajitas{
+    width: 19%;
+    margin-bottom: 2vw;
+}
+.cajitas2{
+    width: 34%;
+        
+}
+
+.cajitas img{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 35px;
+}
+.cajitas2 img{
+    border: 1px solid black;
+    width: 100%;
+    height: 25vw;
+    border-radius: 35px;
+}
+/* Seccion de Precio */
+.precio{
+    height: 244vw;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(9 ,1fr);
+}
+.cajas1 h1{
+    font-size: 8.7vw;
+}
+.cajas2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#fff460;
+    grid-row: span 2;
+    border: 1px solid black;
+}
+.cajas2 .inteructor{
+    height: 14vw;
+        
+}
+.cajas2 h3{
+    font-size: 5.2vw;
+}
+.inteructor .circulo{
+    height: 12vw;
+}
+.circulo img{
+    width: 100%;
+}
+.anillos{
+    position: absolute;
+    width: 9vw;
+    top: 214vw;
+    left: 37vw;
+}
+.anillos img{
+    width: 100%;
+}
+.cajas3{
+    background-color:#ffffff;
+}
+.cajas3 .inteructor2{
+    height: 14vw;
+}
+.cajas3 h3{
+    font-size: 5.2vw;
+}
+.inteructor2 .circulo2{
+    height: 12vw;
+}
+.circulo2 img{
+    width: 100%;
+}
+.cajas4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#015dfd;
+    grid-row: span 2;
+    border: 1px solid black;
+}
+.cajas4 h3{
+    font-size: 6.6vw;
+}
+.cajas4 img{
+    width: 17vw;
+}
+.cajas5{
+    grid-row: 2; 
+}
+.cajas5 h3{
+    position: relative;
+        font-size: 7.2vw;
+        color: #015dfd;
+        font-family: 'Gulfs Display';
+        line-height: 1.1;
+        font-weight: 200;
+        left: 3vw;
+        top: 3vw;
+}
+.cajas5 .inteructor4{
+    position: relative;
+    font-weight: 200;
+    left: 4vw;
+    top: 8vw;
+    width: 86vw;
+    background-color: #fff460;
+    height: 2.7vw;
+    border-radius: 49px;
+    border: 1px solid black;
+}
+.inteructor4 .circulo4{
+    position: absolute;
+        width: 15%;
+        background-color: #fff460;
+        height: 4vw;
+        border-radius: 51px;
+        border: 32px solid #015dfd;
+        top: -5vw;
+        left: 2vw;
+}
+.camara{
+    position: absolute;
+    width: 9vw;
+    top: 216vw;
+    left: 75vw;
+}
+.camara img{
+    width: 100%;
+    display: none;
+}
+.cajas6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#fff460;
+    grid-row: span 2;
+    border: 1px solid black;
+}
+.cajas6 .inteructor3{
+    height: 13vw;
+}
+.inteructor3 img{
+    width: 15%;
+}
+.inteructor3 h1{
+    font-size: 10vw;
+}
+.cajas6 h3{
+    font-size: 6.2vw;
+}
+.cajas7{
+    background-color:#000000;
+    grid-column: span 2;
+    grid-row: span 2;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.cajas7 h3{
+    font-size: 6.2vw;
+}
+.lugar-region{
+    padding: 2vw;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+.lugar-region p{
+    font-size: 3.5vw;
+}
+.cajas7 img{
+    width: 66%;
+    margin: 0 auto;
+}
+.cajas8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column: span 2;
+    background-color:#ff6541;
+    border: 1px solid black;
+}
+.cajas8 h3{
+    text-align: center;
+    padding: 0vw 5.3vw;
+    font-size: 2.2vw;
+    color: #feb4cd;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.cajas8 h1{
+    font-size: 6vw;
+    padding: 0vw 5.3vw;
+    color: #fff460;
+    font-family: 'Gulfs Display';
+    line-height: 1.1;
+    font-weight: 200;
+}
+.cajas9{
+   display: none;
+}
+.circulo5{
+    position: absolute;
+    width: 7%;
+    background-color: #FF5722;
+    height: 7vw;
+    border-radius: 50px;
+    border: 1px solid black;
+    top: 244vw;
+    left: 88vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 1000;
+}
+
+
+/* seccion de contacto*/
+.contacto{
+    height: 56vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 183% 159%;
+}
+.imagenes-contacto{
+    width: 80%;
+    height: 30vw;
+}
+
+.ilus1{
+ 
+ position: relative;
+ top: -29vw;
+
+}
+.ilus1 img{
+    width: 90%;
+    
+}
+.ilus2{
+    position: relative;
+    top: -113vw;
+    width: 34%; 
+}
+.ilus2 img {
+    position: relative;
+    top: 0;
+    width: 100%; 
+}
+
+.ilus3{
+    position: relative;
+    top: -101vw;
+    left: -9vw;
+    width: 19%;
+}
+.ilus3 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.ilus4{
+    position: relative;
+    top: -95vw;
+    left: 64vw;
+    width: 17%;
+    z-index: 2;
+}
+.ilus4 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.ilus5{
+    position: relative;
+    top: -161vw;
+    left: 61vw;
+    width: 21%;
+    z-index: 2;
+}
+
+.ilus5 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+
+.ilus6{
+    position: relative;
+    top: -140vw;
+    left: 65vw;
+    width: 20%;
+    z-index: 2;
+}
+.ilus6 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+.ilus7{
+    position: relative;
+    top: -123vw;
+    left: 68vw;
+    width: 28%;
+    z-index: 2;
+
+}
+.ilus7 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 70%;
+    z-index: 2;
+}
+.ilus8{
+    position: relative;
+    top: -138vw;
+    left: 12vw;
+    width: 37%;
+    z-index: 2;
+}
+.ilus8 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+.ilus9{
+    position: relative;
+    top: -174vw;
+    left: 9vw;
+    width: 22%;
+    z-index: 2;
+}
+.ilus9 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+
+.ilus10{
+    position: relative;
+    top: -170vw;
+    left: 14vw;
+    width: 17%;
+    z-index: 2;
+
+}
+.ilus10 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+
+.ilus11{
+    position: relative;
+    top: -267vw;
+    left: 27vw;
+    width: 33%;
+    z-index: 2;
+}
+.ilus11 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+.ilus12{
+    position: relative;
+    top: -248vw;
+    left: 69vw;
+    width: 11%;
+    z-index: 2;
+}
+.ilus12 img {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    width: 100%;
+    z-index: 2;
+}
+.letras-contacto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -18vw;
+}
+.letras-contacto h1{
+    font-size: 8.5vw;
+}
+.letras-contacto p{
+    margin: 5vw 3vw;
+}
+.fecha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fecha h5{
+    font-size: 7vw;
+}
+.flechas{
+    display: flex;
+    width: 24vw;
+    justify-content: space-evenly;
+    padding: 0vw 5vw
+}
+.flechas img {
+    width: 3.7vw;
+}
+.flechas .fondo-naranja{
+    width: 5vw;
+    height: 5vw;
+}
+.cuadro-redes{
+    display: flex;
+    width: 90%;
+    margin: 4vw auto;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0vw 1vw;
+    border: 1px solid black;
+    width: 20%;
+    height: 11vw;
+    justify-content: center;
+}
+}
+.redes p{
+    margin: 0 auto;
+    font-size: 1.8vw;
+}
+.fondo-azul {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#9ef3f3;
+}
+.fondo-rosa {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffb4ce;
+}
+.fondo-amarillo {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff460;
+
+}
+.circulo-chat{
+    position: sticky;
+    width: 6vw;
+    background-color: #fff460;
+    border-radius: 64px;
+    border: 1px solid black;
+    top: 85vh;
+    left: 90vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 1000;
+    height: 6vw;
+    z-index: 5;
+    justify-content: center;
+}
+.conteiner{
+    position: relative;
+    top: -6vw;
+}
+
+}
+
+
+
+
+
+
+
+
